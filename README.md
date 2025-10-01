@@ -13,7 +13,9 @@ Hệ thống bao gồm các service chính:
 ## Cách chạy ứng dụng:
 
 **Bước 1** : Đóng gói eureka-server (cd registry -> docker-compose up --build)
+
 **Bước 2** : Chạy các service còn lại (nếu muốn chạy bằng lệnh thì cần packaging service và sử dụng câu lệnh .\mvnw spring-boot:run (maven) hoặc .\gradle bootRun (gradle))
+
 **Bước 3** : Truy cập http://localhost:8761 để kiểm tra xem đã tồn tại các service chưa
 
 ## Lưu ý:
