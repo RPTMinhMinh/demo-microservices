@@ -1,0 +1,12 @@
+version: "3.0"
+services:
+  eureka-server-demo:
+    build: ./registry
+    container_name: eureka-server-demo
+    ports:
+      - "8761:8761"
+    healthcheck:
+      test: [ "CMD-SHELL", "curl -f http://localhost:8761/actuator/health || exit 1" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
